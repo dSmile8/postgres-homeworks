@@ -9,7 +9,7 @@ if __name__ == '__main__':
     DATA_EMPLOYEES = Path(__file__).parent.joinpath('north_data', 'employees_data.csv')
     DATA_ORDERS = Path(__file__).parent.joinpath('north_data', 'orders_data.csv')
 
-    connect = psycopg2.connect(host='localhost', database='north', user='postgres', password='asg6515ZX')
+    connect = psycopg2.connect(host='localhost', database='north', user='postgres', password='***')
     try:
         with connect:
             with open(DATA_COSTUMERS, 'r', encoding='UTF-8') as csv_file:
